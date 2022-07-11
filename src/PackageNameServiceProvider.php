@@ -10,13 +10,10 @@ class YourPackageNameServiceProvider extends ServiceProvider
     public function boot()
     {
         if ($this->app->runningInConsole()) {
-            $this->publishes([
-                __DIR__ . '/../config/your_package_name.php' => config_path('your_package_name.php'),
-            ], 'config');
 
-            $this->publishes([
-                __DIR__ . '/../resources/views' => base_path('resources/views/vendor/your_package_name'),
-            ], 'views');
+            $this->publishConfig();
+
+            $this->publishViews();
 
             $migrationFileName = 'create_your_package_name_table.php';
             if (!$this->migrationFileExists($migrationFileName)) {
@@ -35,7 +32,7 @@ class YourPackageNameServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/your_package_name.php', 'your_package_name');
+        $this->mergeConfig();
     }
 
     public static function migrationFileExists(string $migrationFileName): bool
@@ -48,5 +45,24 @@ class YourPackageNameServiceProvider extends ServiceProvider
         }
 
         return false;
+    }
+
+    protected function publishConfig(): void
+    {
+        $this->publishes([
+            __DIR__ . '/../config/your_package_name.php' => config_path('your_package_name.php'),
+        ], 'config');
+    }
+
+    protected function publishViews(): void
+    {
+        $this->publishes([
+            __DIR__ . '/../resources/views' => base_path('resources/views/vendor/your_package_name'),
+        ], 'views');
+    }
+
+    protected function mergeConfig(): void
+    {
+        $this->mergeConfigFrom(__DIR__ . '/../config/your_package_name.php', 'your_package_name');
     }
 }
