@@ -1,4 +1,4 @@
-name: PHP Linting (Pint)
+name: Pint
 
 on: [push]
 
@@ -18,5 +18,5 @@ jobs:
       - name: Commit Changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: PHP Linting (Pint)
+          commit_message: Pint
           skip_fetch: true

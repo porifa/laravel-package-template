@@ -1,9 +1,11 @@
 # :package_description
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/:vendor_slug/:package_slug/run-tests?label=tests)](https://github.com/:vendor_slug/:package_slug/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/:vendor_slug/:package_slug/Check%20&%20fix%20styling?label=code%20style)](https://github.com/:vendor_slug/:package_slug/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
+[![Stable Version](https://img.shields.io/packagist/v/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
+[![GitHub Tests Action Status](<https://img.shields.io/github/workflow/status/:vendor_slug/:package_slug/tests?label=Tests%20(Pest)>)](https://github.com/:vendor_slug/:package_slug/actions?query=workflow%3Atests+branch%3Amain)
+[![GitHub Code Style Action Status](<https://img.shields.io/github/workflow/status/:vendor_slug/:package_slug/Pint?label=Code%20Style%20(Pint)>)](https://github.com/:vendor_slug/:package_slug/actions?query=workflow%3A"pest"+branch%3Amain)
+[![Quality Score](https://img.shields.io/scrutinizer/g/:vendor_slug/:package_slug.svg?style=flat-square)](https://scrutinizer-ci.com/g/:vendor_slug/:package_slug)
+[![Downloads](https://img.shields.io/packagist/dt/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
+[![License](https://img.shields.io/packagist/l/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
