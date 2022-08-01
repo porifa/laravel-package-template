@@ -4,4 +4,5 @@ namespace VendorName\YourPackageName;
 
 class YourPackageName
 {
+    //
 }
