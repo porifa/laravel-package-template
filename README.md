@@ -3,10 +3,10 @@
 
 Use this template and Clone it locally
 
-Open in terminal
+Open terminal in workspace root directory
 
 ```bash
-php ./setup.php
+php setup
 ```
 
 This setup will guide you through creating your package files.
