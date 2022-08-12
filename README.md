@@ -1,3 +1,18 @@
+<!--delete-->
+# How to use and replace placeholders
+
+Use this template and Clone it locally
+
+Open in terminal
+
+```bash
+php ./setup.php
+```
+
+This setup will guide you through creating your package files.
+
+
+<!--/delete-->
 # :package_description
 
 [![Stable Version](https://img.shields.io/packagist/v/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
