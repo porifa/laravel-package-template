@@ -45,7 +45,7 @@ writeln("Let's decide about Files and Directories");
 writeln('');
 
 $hasConfig = confirm('Need Config File?', true);
-$configName = confirm_if($hasConfig, "Config Name ?", $packageSlugWithoutPrefix);
+$configName = inquire_if($hasConfig, "Config Name ?", $packageSlugWithoutPrefix);
 $hasMigration = confirm('Need Migration File?', true);
 // $migrationTableName = confirm_if($hasMigration, "Migration Name?", title_snake($packageSlug));
 $hasFactory = confirm_if($hasMigration, 'Need Model Factory File?', true);
@@ -155,7 +155,7 @@ foreach ($files as $file) {
     ]);
 
     match (true) {
-        str_contains($file, determineSeparator('config/your_package_name.php')) => rename($file, determineSeparator('./config/' . $$configName . '.php')),
+        str_contains($file, determineSeparator('config/your_package_name.php')) => rename($file, determineSeparator('./config/' . $configName . '.php')),
 
         str_contains($file, determineSeparator('database/migrations/create_your_package_name_table.php.stub')) => rename($file, determineSeparator('./database/migrations/create_' . title_snake($packageSlugWithoutPrefix) . '_table.php.stub')),
         
