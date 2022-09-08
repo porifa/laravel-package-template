@@ -11,6 +11,6 @@ class YourPackageName extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'YourPackageName';
+        return \VendorName\YourPackageName\YourPackageName::class;
     }
 }
