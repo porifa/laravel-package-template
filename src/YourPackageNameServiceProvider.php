@@ -2,7 +2,6 @@
 
 namespace VendorName\YourPackageName;
 
-
 use Porifa\LaravelPackageKit\Package;
 use Porifa\LaravelPackageKit\PackageServiceProvider;
 use VendorName\YourPackageName\Console\Commands\YourPackageNameCommand;
