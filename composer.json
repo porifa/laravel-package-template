@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "php": "^8.1",
+        "php": "^8.0",
         "illuminate/contracts": "^9.0",
         "porifa/laravel-package-kit": "^1.0"
     },
