@@ -4,7 +4,7 @@
 
 Use this template and Clone it locally
 
-Open terminal in workspace root directory
+Open terminal in the workspace root directory
 
 ```bash
 php setup
@@ -17,8 +17,8 @@ This setup will guide you through creating your package files.
 # :package_description
 
 [![Stable Version](https://img.shields.io/packagist/v/:vendor_slug/:package_slug.svg?style=flat)](https://packagist.org/packages/:vendor_slug/:package_slug)
-[![GitHub Tests Action Status](<https://img.shields.io/github/workflow/status/:vendor_slug/:package_slug/pest?label=Tests%20(Pest)>)](https://github.com/:vendor_slug/:package_slug/actions?query=workflow%3Apest+branch%3Amain)
-[![GitHub Code Style Action Status](<https://img.shields.io/github/workflow/status/:vendor_slug/:package_slug/Pint?label=Code%20Style%20(Pint)>)](https://github.com/:vendor_slug/:package_slug/actions?query=workflow%3A"Pint"+branch%3Amain)
+[![GitHub Tests Action Status](<https://img.shields.io/github/actions/workflow/status/:vendor_slug/:package_slug/pest.yml?label=Tests%20(Pest)>)](https://github.com/:vendor_slug/:package_slug/actions?query=workflow%3Apest+branch%3Amain)
+[![GitHub Code Style Action Status](<https://img.shields.io/github/actions/workflow/status/:vendor_slug/:package_slug/pint.yml?label=Code%20Style%20(Pint)>)](https://github.com/:vendor_slug/:package_slug/actions?query=workflow%3A"Pint"+branch%3Amain)
 
 <!-- [![StyleCI](https://github.styleci.io/repos/556416263/shield?style=flat&branch=main)](https://github.styleci.io/repos/556416263?branch=main) -->
 <!-- [![Quality Score](https://img.shields.io/scrutinizer/g/:vendor_slug/:package_slug.svg?style=flat)](https://scrutinizer-ci.com/g/:vendor_slug/:package_slug) -->
